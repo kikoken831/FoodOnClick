@@ -50,3 +50,8 @@ body {
 .navbar {
   margin-bottom: 20px;
 }
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}

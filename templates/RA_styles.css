@@ -1,0 +1,32 @@
+body{
+    background-color: #EAEAEA;
+}
+
+.vl{
+    border-right: 3px solid #D3D3D3;
+    height: 35px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+}
+
+.d-inline{
+    padding: 5px;
+    background-color: #FFFFFF;
+}
+
+.bg-teal{
+    background-color: #08D9D6;
+    padding: 15px;
+}
+
+.navbar-brand{
+    margin-left: 5px;
+}
+
+.px-3{
+    color: white;
+}
+
+.h2{
+    margin-left: 15px;
+}

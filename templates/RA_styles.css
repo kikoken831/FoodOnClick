@@ -1,7 +1,19 @@
+/* --  Global -- */
+
 body{
     background-color: #EAEAEA;
 }
 
+button{
+    border: 1px solid black;
+    margin: 5px;
+}
+
+th td{
+    text-align: center;
+}
+
+/* --- Restaurant Admin Home --- */
 .vl{
     border-right: 3px solid #D3D3D3;
     height: 35px;
@@ -30,3 +42,5 @@ body{
 .h2{
     margin-left: 15px;
 }
+
+/* -- RA_Inv -- */

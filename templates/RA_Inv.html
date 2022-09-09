@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <title>Restaurant Administrator - Home</title>
+    </head>
+    <body>
+        <div class="bg-teal">
+            <div class="d-inline h4 vl">
+                Food On Click
+            </div>
+            <div class="d-inline h4">
+                Restaurant Administrator
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Restaurant Admin Menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">Welcome Username</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#RA_nav" aria-controls="RA_nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="RA_nav">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="RA_Home.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu Management</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Table Management</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Order Management</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inventory Management</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">View Coupon</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="#">Sign out</a>
+            </div>
+        </nav>
+
+        <div class="container py-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2">
+                <h1 class="me-3">Inventory Management</h1>
+                <div class="btn-toolbar mb-2 mb-md-0 mx-auto">
+                    <button type="button" class="btn btn-sm btn-primary p-2 mt-2 ms-5">
+                        <span class="align-text-bottom">Create</span>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col-2">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Qty</th>
+                        <th class="col-4"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Dory Fish</td>
+                        <td>30</td>
+                        <td class="text-nowrap"><button>Update</button><button class="btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Eggs</td>
+                        <td>5 trays</td>
+                        <td class="text-nowrap"><button>Update</button><button class="btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Flour</td>
+                        <td>2 bags </td>
+                        <td class="text-nowrap"><button>Update</button><button class="btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Fries</td>
+                        <td>5 bags</td>
+                        <td class="text-nowrap"><button>Update</button><button class="btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Watermelon</td>
+                        <td>2</td>
+                        <td class="text-nowrap"><button>Update</button><button class="btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Tomatoes</td>
+                        <td>2 kg</td>
+                        <td class="text-nowrap"><button>Update</button><button class="btn-danger">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Bootstrap Bundle with Popper-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    <link rel="stylesheet" href="RA_styles.css">
+</html>

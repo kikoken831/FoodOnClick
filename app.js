@@ -3,7 +3,10 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 const pool = require("./db");
+const path = require("path");
 const app = express();
+const PORT = process.env.PORT || 3000;
+
 
 let session = {
   name: "",
@@ -14,10 +17,16 @@ let session = {
 app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+
+
+
+if(process.env.NODE_ENV === "production"){
+  //server static content
+  app.use(express.static(path.join(__dirname, "public")));
+}
 
 let invalidMsg = false;
-
+app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => {
   res.render("login", { invalidMsg: invalidMsg });
 });
@@ -45,6 +54,13 @@ app.post("/", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("Server started on port 3000");
+
+
+app.get("*", (req,res) => {
+  res.sendFile(path.join(__dirname, "/"));
+})
+
+
+app.listen(PORT, () => {
+  console.log(`Server is starting on port ${PORT}`);
 });

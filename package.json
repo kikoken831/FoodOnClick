@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start" : "node app.js",
-    "heroku-postbuild": "npm install"
+    "heroku-postbuild": " cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",

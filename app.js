@@ -27,9 +27,9 @@ if(process.env.NODE_ENV === "production"){
 
 let invalidMsg = false;
 app.use(express.static(path.join(__dirname, "public")));
-app.get("/", (req, res) => {
-  res.render("login", { invalidMsg: invalidMsg });
-});
+// app.get("/", (req, res) => {
+//   res.render("login", { invalidMsg: invalidMsg });
+// });
 
 app.get("/dashboard", (req, res) => {
   console.log(session);

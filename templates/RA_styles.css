@@ -1,0 +1,49 @@
+/* --  Global -- */
+
+body{
+    background-color: #EAEAEA;
+}
+
+button{
+    border: 1px solid black;
+    margin: 5px;
+}
+
+th td{
+    text-align: center;
+}
+
+/* --- Restaurant Admin Home --- */
+.vl{
+    border-right: 3px solid #D3D3D3;
+    height: 35px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+}
+
+.d-inline{
+    padding: 5px;
+    background-color: #FFFFFF;
+}
+
+.bg-teal{
+    background-color: #08D9D6;
+    padding: 15px;
+}
+
+.navbar-brand{
+    margin-left: 5px;
+}
+
+.px-3{
+    color: white;
+}
+
+.h2{
+    margin-left: 15px;
+}
+
+/* -- RA_Inv -- */
+.table-striped>tbody>tr:nth-child(odd){
+    background-color: #08D9D6; 
+}
